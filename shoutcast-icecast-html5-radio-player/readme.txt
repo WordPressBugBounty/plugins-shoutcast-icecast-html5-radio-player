@@ -1,14 +1,16 @@
 === Shoutcast Icecast HTML5 Radio Player  ===
 Contributors: svnlabs
-Tags: Shoutcast, Icecast, Radiosolution, Music Player, MP3 podcast Player, Audio FM Player, HTML5, Radio Player
+Tags: shoutcast, icecast, html5-audio, radio-player, podcast-player
 Donate link: https://www.svnlabs.com/store/
 Requires at least: 3.0.1
-Tested up to: 5.7.2
+Tested up to: 6.8
 Requires PHP: 5.2.4
-Stable tag: 2.1.6
+Stable tag: 2.1.8
 License: GPLv2 or later
 License URI: https://www.svnlabs.com/store/license/
 
+
+A secure HTML5 radio player for Shoutcast, Icecast, and podcast streams with social sharing.
 
 == Description ==
 
@@ -74,21 +76,21 @@ Enter your Radio Server information then use shortcode.
 
 = How to add Radio Stream URL =
 
-Please use Radio MP3 Stream URL like http://your-radio-server-ip:port/
+Please use Radio MP3 Stream URL like https://your-radio-server-ip:port/
 
 i.e.  http://174.127.x.y:8013/ 
 
-**Note: Make sure you have valid MP3 Radio Stream, Don't include listen.pls in URL ** http://yp.shoutcast.com/sbin/tunein-station.pls
+**Note: Make sure you have valid MP3 Radio Stream, Don't include listen.pls in URL ** https://yp.shoutcast.com/sbin/tunein-station.pls
 
-Shoutcast V1 (http://shoutcast-server-ip:port/) 
-Shoutcast V2 (http://shoutcast-server-ip:port/streamname) 
-Icecast (http://icecast-server-ip:port/streamname)
-Any MP3 Link (http://shoutcast-server-ip:port/file.mp3)
+Shoutcast V1 (https://shoutcast-server-ip:port/) 
+Shoutcast V2 (https://shoutcast-server-ip:port/streamname) 
+Icecast (https://icecast-server-ip:port/streamname)
+Any MP3 Link (https://shoutcast-server-ip:port/file.mp3)
 
 
 Shortcode for Page or Post
 
-[html5radio player="shoutcast" stream="http://your-server-ip:port" banner="http://your-domain.com/radio.jpg"]
+[html5radio player="shoutcast" stream="https://your-server-ip:port" banner="http://your-domain.com/radio.jpg"]
 
 
 == Frequently Asked Questions ==
@@ -112,6 +114,13 @@ For support please visit https://www.svnlabs.com/store/contact/
 * podcast support added
 
 == Upgrade Notice ==
+
+= 2.1.8 =
+
+* Security improvements and code cleanup.
+* Updated shortcode sanitization and escaping.
+* Updated plugin header and readme for WordPress.org compliance.
+* Improved compatibility with WordPress 6.8.
 
 = 2.1.6 =
 
